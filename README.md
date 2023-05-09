@@ -26,13 +26,19 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
 ## Capítulo 2: Introdução a aplicativos java - entrada/saída e operadores
 
 - __Exemplos:__
-  		- [x] __2.1)__ Exibindo __Welcome to Java Programming!__ no terminal usando `System.out.println("Welcome to Java Programming!");`.
-  		- [x] __2.2)__ Exibindo __Welcome to Java Programming!__ no terminal, usando `System.out.print("Welcome to ")`e `System.out.println("Java Programming"!)`.  
-  		- [x] __2.3__ Exibindo __Welcome to java Programming!__ no terminal, uma palavra por linha, usando o caractere de escape `\n. `
-  		- [x] __2.4)__ Exibindo __Welcome to java Programming!__ no terminal, dividido em duas linhas, usando o comando `System.out.printf("%s%n%s%n",  "Welcome to", "Java Programming!")`. 
-  		- [x] __2.5)__ Recebendo dois valores inteiros do teclado através da classe `java.util.Scanner` e exibindo a soma dos valores.
-  		- [x] __2.6)__ Recebendo 2 valores inteiros do teclado e utilizando o comando `if()` e comparando os valores com expressões lógicas para exibir no terminal se o primeiro valor é diferente, igual, maior, menor, maior igual e menor igual do que o primeiro valor. 
+  	
+  - [x] __2.1)__ Exibindo __Welcome to Java Programming!__ no terminal usando `System.out.println("Welcome to Java Programming!");`.
+  
+  - [x] __2.2)__ Exibindo __Welcome to Java Programming!__ no terminal, usando `System.out.print("Welcome to ")`e `System.out.println("Java Programming"!)`.
+  
+  - [x] __2.3__ Exibindo __Welcome to java Programming!__ no terminal, uma palavra por linha, usando o caractere de escape `\n. `
 
+  	- [x] __2.4)__ Exibindo __Welcome to java Programming!__ no terminal, dividido em duas linhas, usando o comando `System.out.printf("%s%n%s%n",  "Welcome to", "Java Programming!")`. 
+  	
+  	- [x] __2.5)__ Recebendo dois valores inteiros do teclado através da classe `java.util.Scanner` e exibindo a soma dos valores.
+  	
+  	- [x] __2.6)__ Recebendo 2 valores inteiros do teclado e utilizando o comando `if()` e comparando os valores com expressões lógicas para exibir no terminal se o primeiro valor é diferente, igual, maior, menor, maior igual e menor igual do que o primeiro valor. 
+  	
 - __Exercícios de revisão:__
   - [x] __2.1)__ Exercícios sobre elementos apresentados na construção do capítulo como, uso de chaves para delimitar classes e métodos, caracteres de escape, especificadores de formato, palavras chave, método main e métodos de saída no terminal.
   - [x] __2.2)__ Exercícios sobre comentários no java, uso correto de identificadores e operares aritméticos e seus níveis de precedência.
