@@ -79,9 +79,11 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
 
 ## Capitulo 3: Introdução a classes objetos, métodos e strings
 
+__*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificação que é feita no exemplo, como foi feito no capítulo anterior, optei por criar uma única classe e prosseguir modificando-a de acordo o decorrer do capítulo, registrando o código fonte de cada etapa.*__
+
 - __Exemplos:__
 
-  - [x] Criando a classe Account e manipulando um objeto Account com a classe AcountTest.
+  - [x] Criando a classe __Account__ e manipulando um objeto dela com a classe __AcountTest__.
 
     ```Java
     /*Exemplo: Account.java
@@ -147,7 +149,7 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
     
     } //Fim da classe AccountTest.
 
-  - [x] Construindo a classe Account com o método construtor e inicializando os objetos com o construtor na classe AccountTest.
+  - [x] Adicionando um método construtor a classe __Account__ e modificando à classe __AccountTest__ para testar o novo recurso.
 
     ```Java
     /*Exemplo: Account.java
@@ -209,7 +211,137 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
     
     } //Fim da classe AccountTest.
 
-  - [x] 
+  - [x] Adicionando a variável de instância _balance_ à classe __Account__ e também os métodos que a manipulam, modificando a classe __AccountTest__ para usar os novos recursos.
+
+    ```Java
+    /*Exemplo: Account.java
+    *Classe Account que contém as variáveis de instância name do tipo String e balance do tipo double, método construtor
+    *e métodos para configurar e obter seu valor.
+    */
+    
+    public class Account { //Início da classe Account.
+    
+        private String name; //Variável de instância.
+        private double balance; //Variável de instância.
+    
+        
+        //Método construtor, inicializa a variável de instância com o parâmetro passado.
+        public Account(String name, double balance) { //Início do método name.
+    
+            this.name = name; //Valor do parâmetro é atribuído à variável de instância name.
+            
+            if(balance > 0.0) { //Início do if que avalia a expressão balance > 0.0.
+    
+                this.balance = balance; //Valor do parâmetro é atribuído à variável de instância balance.
+    
+            } //Fim do if que avalia a expressão balance > 0.0.
+    
+        } //Fim do método main.
+    
+        
+        //Método deposit, método para acrescentar saldo a conta.
+        public void deposit(double depositAmount) { //Início do método deposit.
+    
+            if(depositAmount > 0.0) { //Início do if que avalia a expressão depositAmount > 0.0.
+    
+                this.balance = balance + depositAmount; //Instrução que soma o valor do parâmetro ao da variável balance e o atribui a balance
+    
+            } //Fim do if que avalia a expressão depositAmount > 0.0.
+    
+        } //Fim do método deposit.
+    
+        
+        //Método getBalance, retorna o valor da variável de instância balance.
+        public double getBalance() { //Início do método getBalance.
+    
+            return this.balance; //Instrução para retornar o valor da variável de instância balance.
+    
+        } //Fim do método getBalance.
+    
+    
+        //Método para definir nome do objeto.
+        public void setName(String name) { //Início do método setName.
+    
+            this.name = name; //Variável de instância name recebe o parâmetro setName.
+    
+        } //Fim do método setName.
+    
+        //Método para recuperar nome do objeto.
+        public String getName() { //Início do método getName.
+    
+            return this.name; //Instrução para retornar o valor da variável de instância name.
+    
+        } //Fim do método getName.
+    
+    } //Fim da classe Account.
+    ```
+
+    ```java
+    /* Exemplo: AccountTest.java
+     * Cria e manipula objetos Account e os inicializa pelo
+     * construtor.
+     */
+    
+    import java.util.Scanner; //Importando a classe Scanner da Java API.
+    
+    public class AccountTest { //Início da classe AccountTest.
+        
+        //Método main, inicia a execução da aplicação.
+        public static void main(String[] args) { //Início do método main.
+    
+            Scanner input = new Scanner(System.in); //Cria objeto Scanner para entrada de dados a partir da janela de comando
+    
+            Account account1 = new Account("Jane Green", 50.00); //Cria um objeto Account com a string Jane Green e o atribui a variável account1.
+            Account account2 = new Account("John Blue", -7.53); //Cria um objeto Account com a string John Blue e o atribui a variável account2.
+    
+            System.out.println("__________________________________________"); //Exibe um traço horizontal na janela de comando.
+    
+            System.out.printf("| %s balance: $%.2f %n", account1.getName(), account1.getBalance()); //Exibe o nome e o saldo armazenado no objeto account1.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| %s balance: %.2f %n", account2.getName(), account2.getBalance()); //Exibe o nome e o saldo armazenado no objeto account2.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+    
+            System.out.print("| Enter deposit amount for account1: "); //Mensagem de instrução para o usuário.
+            double depositAmount = input.nextDouble(); //Variável de instância balance do objeto account1 recebe o valor digitado.
+            System.out.printf("|%n| Adding %.2f to account1 balance.%n", depositAmount); //Mensagem ao usuário.
+            account1.deposit(depositAmount); //Adicionando o inserido valor ao objeto account1.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| %s balance: $%.2f %n", account1.getName(), account1.getBalance()); //Exibe o nome e o saldo armazenado no objeto account1.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| %s balance: %.2f %n", account2.getName(), account2.getBalance()); //Exibe o nome e o saldo armazenado no objeto account2.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+    
+            System.out.print("| Enter deposit amount for account2: "); //Mensagem de instrução para o usuário.
+            depositAmount = input.nextDouble(); //Variável de instância balance do objeto account1 recebe o valor digitado.
+            System.out.printf("|%n| Adding %.2f to account2 balance.%n", depositAmount); //Mensagem ao usuário.
+            account2.deposit(depositAmount); //Adicionando o inserido valor ao objeto account1.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| %s balance: $%.2f %n", account1.getName(), account1.getBalance()); //Exibe o nome e o saldo armazenado no objeto account1.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| %s balance: %.2f %n", account2.getName(), account2.getBalance()); //Exibe o nome e o saldo armazenado no objeto account2.
+    
+            System.out.println("|_________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+    
+            input.close(); //Fecha objeto input.
+    
+        } //Fim do método main.
+    
+    } //Fim da classe AccountTest.
 
 - __Exercícios de revisão:__
 
