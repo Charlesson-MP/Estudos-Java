@@ -81,7 +81,135 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
 
 - __Exemplos:__
 
-  
+  - [x] Criando a classe Account e manipulando um objeto Account com a classe AcountTest.
+
+    ```Java
+    /*Exemplo: Account.java
+    *Classe Account que contém uma variável de instância name
+    *e métodos para configurar e obter seu valor. 
+    */
+    
+    public class Account { //Início da classe Account.
+    
+        private String name; //Atributo da classe.
+    
+        //Método para definir nome do objeto.
+        public void setName(String name) { //Início do método name.
+    
+            this.name = name; //Variável de instância name recebe o parâmetro name.
+    
+        } //Fim do método setName.
+    
+        //Método para recuperar nome do objeto.
+        public String getName() { //Início do método getName.
+    
+            return this.name; //Retorna o valor de name para o método chamador.
+    
+        } //Fim do método getName.
+    
+    } //Fim da classe Account.
+    ```
+
+    ```Java
+    /* Exemplo: AccountTest.java
+     * Cria e manipula um objeto Account.
+     */
+    
+    import java.util.Scanner; //Importa a classe Scanner da Java API.
+    
+    public class AccountTest { //Início da classe AccountTest.
+        
+        //Método main, inicia a execução da aplicação
+        public static void main(String[] args) { //Início do método main
+    
+            Scanner input = new Scanner(System.in); //Cria um objeto Scanner para receber uma entrada pela janela de comando.
+    
+            Account myAccount = new Account(); //Cria um objeto Account e o atribui a variável myAccount.
+    
+            System.out.println("_____________________________________________"); //Exibe um traço horizontal na janela de comando.
+    
+            System.out.printf("| Initial name is: %s%n", myAccount.getName()); //Exibe um traço vertical e o nome inicial da conta na janela de comando.
+    
+            System.out.println("|____________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+            
+            System.out.print("| Please enter the name: "); //Exibe na janela de comando um traço vertical e a instrução para o usuário inserir o nome.
+            myAccount.setName(input.nextLine()); //Recebe o nome através do método nextLine() do objeto input e o passa como parâmetro para o método setName do objeto myAccount.
+    
+            System.out.println("|____________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| Name in object myAccount is: %s%n", myAccount.getName()); //Exibe o novo nome armazenado no objeto myAccount.
+    
+            System.out.println("|____________________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            input.close(); //Fecha o objeto input.
+    
+        } //Fim do método main.
+    
+    } //Fim da classe AccountTest.
+
+  - [x] Construindo a classe Account com o método construtor e inicializando os objetos com o construtor na classe AccountTest.
+
+    ```Java
+    /*Exemplo: Account.java
+    *Classe Account que contém uma variável de instância name, método construtor
+    *e métodos para configurar e obter seu valor.
+    */
+    
+    public class Account { //Início da classe Account.
+    
+        private String name; //Atributo da classe.
+    
+        //Método construtor, inicializa a variável de instância com o parâmetro passado.
+        public Account(String name) { //Início do método name.
+        
+        } //Fim do método main.
+    
+        //Método para definir nome do objeto.
+        public void setName(String name) { //Início do método name.
+    
+            this.name = name; //Variável de instância name recebe o parâmetro name.
+    
+        } //Fim do método setName.
+    
+        //Método para recuperar nome do objeto.
+        public String getName() { //Início do método getName.
+    
+            return this.name; //Retorna o valor de name para o método chamador.
+    
+        } //Fim do método getName.
+    
+    } //Fim da classe Account.
+    ```
+
+    ```Java
+    /* Exemplo: AccountTest.java
+     * Cria e manipula objetos Account e os inicializa pelo
+     * construtor.
+     */
+    
+    public class AccountTest { //Início da classe AccountTest.
+        
+        //Método main, inicia a execução da aplicação.
+        public static void main(String[] args) { //Início do método main.
+    
+            Account account1 = new Account("Jane Green"); //Cria um objeto Account com a string Jane Green e o atribui a variável account1.
+            Account account2 = new Account("John Blue"); //Cria um objeto Account com a string John Blue e o atribui a variável account2.
+    
+            System.out.println("___________________________________"); //Exibe um traço horizontal na janela de comando.
+    
+            System.out.printf("| account1 name is: %s%n", account1.getName()); //Exibe o novo nome armazenado no objeto account1.
+    
+            System.out.println("|__________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+            System.out.printf("| account2 name is: %s%n", account2.getName()); //Exibe o novo nome armazenado no objeto account2.
+    
+            System.out.println("|__________________________________"); //Exibe um traço vertical e outro horizontal na janela de comando.
+    
+        } //Fim do método main.
+    
+    } //Fim da classe AccountTest.
+
+  - [x] 
 
 - __Exercícios de revisão:__
 
