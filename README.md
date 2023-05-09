@@ -350,7 +350,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
     - [x] __Exemplo Dialog1.java:__ Usando o método __ShowMessageDialog__ da classe __JOptionPane__ para exibir uma mensagem em uma caixa de diálogo.
     - [x] __Exemplo NameDialog.java:__ Usando os métodos __ShowInputDialog__ e __ShowMessageDialog__ para receber uma string do usuário e retorna-la junto a uma mensagem através de uma caixa de diálogo.
-    - [ ] __Exercício do estudo de caso GUI:__ Modifica o programa de adição na figura 2.7 para utilizar entrada e saída usando as caixas de diálogos mostradas nos exemplos anteriores.
+    - [ ] __Exercício do estudo de caso GUI:__ Modifica o programa de adição na figura 2.7 (capítulo 2) para utilizar entrada e saída usando as caixas de diálogos mostradas nos exemplos anteriores.
 
 - __Exercícios de revisão:__
 
