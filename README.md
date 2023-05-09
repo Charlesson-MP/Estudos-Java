@@ -9,17 +9,16 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
 ## Capítulo 1: Introdução a computadores, internet e java
 
 * **Exercícios de revisão:**
-
-  - [x] __1.1)__ Exercícios sobre termos utilizados, arquitetura de computadores, tipos de linguagem, estágios de produção de software, etc. 
-
-  - [x] __1.2)__ Exercícios sobre os comandos usados para compilar e executar arquivos java.
-
-  - [x] __1.3)__ Exercícios sobre termos comuns na linguagem java e POO como classes, abstração, atributos, herança e uma introdução sobre UML(*Unified Modeling Language*).
+- [x] __1.1)__ Exercícios sobre termos utilizados, arquitetura de computadores, tipos de linguagem, estágios de produção de software, etc. 
+  
+- [x] __1.2)__ Exercícios sobre os comandos usados para compilar e executar arquivos java.
+  
+- [x] __1.3)__ Exercícios sobre termos comuns na linguagem java e POO como classes, abstração, atributos, herança e uma introdução sobre UML(*Unified Modeling Language*).
 
 - __Questões:__
   - [x] __1.4)__ Questões sobre arquitetura do computador, seus elementos e linguagem assembly.
   - [x] __1.5)__ Questões sobre algumas linguagens de alto nível e o protocolo de controle de transmissão na rede. 
-  - [x] __1.6)__ Questões sobre os estágios na execução de um programa java e as particularidades da JVM(_Java Virtual Machine_).
+  - [x] __1.6)__ Questões sobre os estágios na execução de um programa java e as particularidades da JVM (_Java Virtual Machine_).
   - [x] __1.7)__ Questão sobre as duas fases de compilação num programa java.
   - [x] __1.8)__ Questão sobre a implementação de um relógio com os conceitos apresentados sobre POO durante o capítulo, como classes, atributos, herança, entre outros.
 
@@ -210,6 +209,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
         } //Fim do método main.
     
     } //Fim da classe AccountTest.
+    ```
 
   - [x] Adicionando a variável de instância _balance_ à classe __Account__ e também os métodos que a manipulam, modificando a classe __AccountTest__ para usar os novos recursos.
 
@@ -342,6 +342,15 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
         } //Fim do método main.
     
     } //Fim da classe AccountTest.
+    ```
+
+    ### (Opcional) Estudo de caso de GUIs
+
+    ​    Nesta parte do capítulo, o autor nos apresenta uma série de exemplos para começar a trabalhar com elementos GUI (Graphical User Interface), como são exemplos em classes distintas, optei por só inserir uma descrição do que o código faz quando compilado e executado.
+
+    - [x] __Exemplo Dialog1.java:__ Usando o método __ShowMessageDialog__ da classe __JOptionPane__ para exibir uma mensagem em uma caixa de diálogo.
+    - [x] __Exemplo NameDialog.java:__ Usando os métodos __ShowInputDialog__ e __ShowMessageDialog__ para receber uma string do usuário e retorna-la junto a uma mensagem através de uma caixa de diálogo.
+    - [ ] __Exercício do estudo de caso GUI:__ Modifica o programa de adição na figura 2.7 para utilizar entrada e saída usando as caixas de diálogos mostradas nos exemplos anteriores.
 
 - __Exercícios de revisão:__
 
