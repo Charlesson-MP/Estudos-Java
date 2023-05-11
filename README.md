@@ -4,9 +4,9 @@
 
 ​	À pasta __exemplos__, conterá os exemplos feitos ao longo do capítulo, à pasta __exercícios de revisão__ armazena os exercícios apresentados no final de cada capítulo com um gabarito no final para verificação e o diretório __questões__ contém outras questões propostas no final do livro sem um gabarito e além disso possui também os desafios propostos na sessão _faça a diferença_, para alunos que queiram ir a fundo com problemas que exigem não apenas os conhecimentos adquiridos no capítulo mas também um pouco mais de raciocínio.
 
-__*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo teórico e definições, a parte de programação começa no capítulo 2.*__
-
 ## Capítulo 1: Introdução a computadores, internet e java
+
+__*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo teórico e definições, a parte de programação começa no capítulo 2.*__
 
 * **Exercícios de revisão:**
   - [x] __1.1)__ Exercícios sobre termos utilizados, arquitetura de computadores, tipos de linguagem, estágios de produção de software, etc. 
@@ -37,7 +37,7 @@ __*Obs: O capítulo 1 não possui à pasta exemplos pois ele apresenta conteúdo
   - [x] __2.5)__ Recebendo dois valores inteiros do teclado através da classe `java.util.Scanner` e exibindo a soma dos valores.
   	
   - [x] __2.6)__ Recebendo 2 valores inteiros do teclado e utilizando o comando `if()` e comparando os valores com expressões lógicas para exibir no terminal se o primeiro valor é diferente, igual, maior, menor, maior igual e menor igual do que o primeiro valor. 
-  	
+  
 - __Exercícios de revisão:__
   - [x] __2.1)__ Exercícios sobre elementos apresentados na construção do capítulo como, uso de chaves para delimitar classes e métodos, caracteres de escape, especificadores de formato, palavras chave, método main e métodos de saída no terminal.
   - [x] __2.2)__ Exercícios sobre comentários no java, uso correto de identificadores e operares aritméticos e seus níveis de precedência.
@@ -350,7 +350,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
     - [x] __Exemplo Dialog1.java:__ Usando o método __ShowMessageDialog__ da classe __JOptionPane__ para exibir uma mensagem em uma caixa de diálogo.
     - [x] __Exemplo NameDialog.java:__ Usando os métodos __ShowInputDialog__ e __ShowMessageDialog__ para receber uma string do usuário e retorna-la junto a uma mensagem através de uma caixa de diálogo.
-    - [ ] __Exercício do estudo de caso GUI:__ Modifica o programa de adição na figura 2.7 (capítulo 2) para utilizar entrada e saída usando as caixas de diálogos mostradas nos exemplos anteriores.
+    - [x] __Exercício do estudo de caso GUI:__ Modifica o programa de adição na figura 2.7 (capítulo 2) para utilizar entrada e saída usando as caixas de diálogos mostradas nos exemplos anteriores.
 
 - __Exercícios de revisão:__
 
