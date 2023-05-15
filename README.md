@@ -361,10 +361,17 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
 - __Questões:__
 
-  - [x] __3.5)__ Modificar a classe Account da figura 3.8 adicionando um método para saque e a classe AccountTest para usar o novo método.
-
+  - [x] __3.5)__ Explicar o objetivo e o efeito da palavra chave new.
+  - [x] __3.6)__ Responder o que é um construtor e como às variáveis de instâncias são inicializadas numa classe contendo somente um construtor padrão.
+  - [x] __3.7)__ Explicar o propósito de uma variável de instância.
+  - [x] __3.8)__ Explicar o motivo de às classe System e String poderem ser usadas sem ser importadas.
+  - [x] __3.9)__ Dizer como usar a classe Scanner sem importa-la.
+  - [x] __3.10)__ Explicar o motivo do uso dos métodos get e set para às variáveis de instância.
+  
+  - [x] __3.11)__ Modificar a classe Account da figura 3.8 adicionando um método para saque e a classe AccountTest para usar o novo método.
+  
     - Classe Account.java.
-
+  
       ```java
       /* Questão 3.11.
        * Modificar a classe Account da figura 3.8 para fornecer um método de saque que analise antes se há saldo disponível
@@ -444,9 +451,9 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
       
        } //Fim da classe Account.
       ```
-
+  
     - Classe AccountTest.java.
-
+  
       ```java
       /*Questão 3.11.
        * Modifica a classe AccountTest da figura 3.9 para testar o método withDraw.
@@ -522,3 +529,189 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
           } //Fim do método main
       
       }//Fim da classe AccountTest.
+      ```
+    
+  - [x] __3.12)__ Criar uma classe chamada Invoice que representa a fatura de uma loja com 4 variáveis de instância, seus métodos getter e setter e estruturas de decisão para não aceitar valores inválidos. Além disso, criar a classe de teste para utilizar elementos da classe Invoice.
+  
+    - Classe Invoice.java.
+  
+      ```java
+      /*Questão 3.12.
+       * Classe Invoice representa a fatura de uma loja de suprimentos de informática, com 4 variáveis de instância
+       * e seus metodos getter e setter. Além disso, a classe deve conter um método para calcular o valor da fatura
+       * e estruturas de tomada de decisão para assegurar-se de não receber valores negativos.
+       */
+      
+      public class Invoice { //Início da classe Invoice.
+      
+          private String number; //Variável de instância tipo String.
+          private String description; //Variável de instância tipo String.
+          private int amount; //Variável de instância tipo int.
+          private double priceUnit; //Variável de instância tipo double.
+      
+          //Método construtor, inicializa um objeto da classe Invoice.
+          public Invoice(String number, String description, int amount, double priceUnit) { //Início do método Invoice.
+      
+              this.number = number; //Atribui o argumento recebido pelo parâmetro number à variável de instância number.
+              this.description = description; //Atribui o argumento recebido pelo parâmetro description à variável de instância description.
+      
+              if(amount > 0) { //Início do if que verifica a expressão amount > 0.
+      
+                  this.amount = amount; //Atribui o argumento recebido pelo parâmetro amount à variável de instância Amount.
+      
+              } //Fim do if que verifica a expressão amount > 0.
+      
+              if(priceUnit > 0.0) { //Início do if que verifica à expressão priceUnit > 0.0.
+      
+                  this.priceUnit = priceUnit; //Atribui o argumento recebido pelo parâmetro priceUnit à variável de instância priceUnit.
+      
+              } //Fim do if que verifica à expressão priceUnit > 0.0.
+      
+          } //Fim do método Invoice.
+      
+      
+          public void setNumber(String newNumber) { //Início do método setNumber.
+      
+              this.number = newNumber; //Atribui o argumento recebido pelo parâmetro newNumber à variável de instância number.
+      
+          } //Fim do método setNumber.
+      
+          public String getNumber() { //Início do método getNumber.
+      
+              return this.number; //Retorna o conteúdo da variável de instância number.
+      
+          } //Fim do método setNumber.
+      
+      
+          public void setDescription(String newDescription) { //Início do método setDescription.
+      
+              this.description = newDescription; //Atribui o argumento recebido pelo parâmetro newDescription à variável de instância description.
+      
+          } //Fim do método setDescription.
+      
+          public String getDescription() { //Início do método getDescription.
+      
+              return this.description; //Retorna o conteúdo da variável de instância description.
+      
+          } //Fim do método getDescription.
+      
+      
+          public void setAmount(int newAmount) { //Início do método setAmount.
+      
+              if(newAmount > 0) { //Início do if que verifica à expressão newAmount > 0.
+      
+                  System.out.printf("| New amount is %d.%n", newAmount); //Exibe mensagem no terminal.
+                  this.amount = newAmount; //Atribui o argumento recebido pelo parâmetro à variável de instância amount.
+      
+              } //Fim do if que verifica à expressão newAmount > 0.
+      
+              if(newAmount <= 0) { //Início do if que verifica à expressão newAmount <= 0.
+                  
+                  System.out.println("| Invalid amount."); //Exibe mensagem no terminal.
+      
+              } //Fim do if que verifica à expressão newAmount <= 0.
+      
+          } //Fim do método setAmount.
+      
+          public int getAmount() { //Início do método getAmount.
+      
+              return this.amount; //Retorna o conteúdo da variável de instância amount
+      
+          } //Fim do método getAmount.
+      
+      
+          public void setPriceUnit(double newPriceUnit) { //Início do método setPriceUnit.
+      
+              if(newPriceUnit > 0.0) { //Início do if que verifica à expressão newPriceUnit > 0.0.
+      
+                  System.out.printf("| New price unit is $%.2f.%n", newPriceUnit); //Exibe mensagem no terminal.
+                  this.priceUnit = newPriceUnit; //Atribui o argumento recebido pelo parâmetro à variável de instância priceUnit.
+      
+              } //Fim do if que verifica à expressão newPriceUnit > 0.0.
+      
+              if(newPriceUnit <= 0.0) { //Início do if que verifica à expressão newPriceUnit <= 0.0.
+      
+                  System.out.println("| Invalid price unit."); //Exibe mensagem no terminal.
+      
+              } //Fim do if que verifica à expressão newPriceUnit <= 0.0.
+      
+          } //Fim do método setPriceUnit.
+      
+          public double getPriceUnit() { //Início do método getPriceUnit.
+      
+              return this.priceUnit; //Retorna o conteúdo da variável de instância priceUnit.
+      
+          } //Fim do método getPriceUnit.
+      
+      
+          public double getInvoiceAmount() { //Início do método getInvoiceAmout.
+      
+              return this.priceUnit * this.amount; //Retorna o valor de priceUnit multiplicado pelo valor de amount.
+      
+          } //Fim do método getInvoiceAmount;
+          
+      } //Fim da classe Invoice.
+      ```
+  
+    - Classe InvoiceTest.java.
+  
+      ``` java
+      /*Questão 3.12.
+       * Classe para testar objetos da classe Invoice.
+       */
+      
+      import java.util.Scanner; //Importando a classe Scanner da java API.
+      
+      public class InvoiceTest { //Início da classe InvoiceTest.
+          
+          //Método main, inicia a execução da aplicação.
+          public static void main(String[] args) { //Início do método main.
+      
+              Scanner input = new Scanner(System.in); //Objeto da classe Scanner para entrada de dados à partir do teclado.
+      
+              Invoice fatura1 = new Invoice("0001", "Mouse simples.", 30, 17.00); //Objeto da classe Invoice.
+      
+              System.out.println("________________________________________"); //Exibe um traço no terminal.
+      
+              System.out.printf("| Number: %s%n| Description: %s%n| Amout: %d%n| Price Unit: $%.2f%n| Invoice Amount: $%.2f%n",
+               fatura1.getNumber(),
+               fatura1.getDescription(),
+               fatura1.getAmount(),
+               fatura1.getPriceUnit(), 
+               fatura1.getInvoiceAmount()); //Exibe a fatura com os valores de todas as variáveis de instância no terminal e o valor da fatura.
+      
+              System.out.println("|_______________________________________"); //Exibe um traço no terminal.
+      
+              System.out.print("| Enter new Amount: "); //Exibe mensagem no terminal.
+              fatura1.setAmount(input.nextInt());
+      
+              System.out.println("|_______________________________________"); //Exibe um traço no terminal.
+      
+              System.out.printf("| Number: %s%n| Description: %s%n| Amout: %d%n| Price Unit: $%.2f%n| Invoice Amount: $%.2f%n",
+               fatura1.getNumber(),
+               fatura1.getDescription(),
+               fatura1.getAmount(),
+               fatura1.getPriceUnit(), 
+               fatura1.getInvoiceAmount()); //Exibe a fatura com os valores de todas as variáveis de instância no terminal e o valor da fatura.
+      
+              System.out.println("|_______________________________________"); //Exibe um traço no terminal.
+      
+              System.out.print("| Enter new price unit: $");
+              fatura1.setPriceUnit(input.nextDouble());
+      
+              System.out.println("|_______________________________________"); //Exibe um traço no terminal.
+      
+              System.out.printf("| Number: %s%n| Description: %s%n| Amout: %d%n| Price Unit: $%.2f%n| Invoice Amount: $%.2f%n",
+               fatura1.getNumber(),
+               fatura1.getDescription(),
+               fatura1.getAmount(),
+               fatura1.getPriceUnit(), 
+               fatura1.getInvoiceAmount()); //Exibe a fatura com os valores de todas as variáveis de instância no terminal e o valor da fatura.
+      
+              System.out.println("|_______________________________________"); //Exibe um traço no terminal.
+      
+              input.close(); //Fecha o objeto input.
+      
+          } //Fim do método main.
+      
+      } //Fim da classe InvoiceTest.
