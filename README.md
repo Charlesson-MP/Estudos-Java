@@ -362,10 +362,15 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 - __Questões:__
 
   - [x] __3.5)__ Explicar o objetivo e o efeito da palavra chave new.
+  
   - [x] __3.6)__ Responder o que é um construtor e como às variáveis de instâncias são inicializadas numa classe contendo somente um construtor padrão.
+  
   - [x] __3.7)__ Explicar o propósito de uma variável de instância.
+  
   - [x] __3.8)__ Explicar o motivo de às classe System e String poderem ser usadas sem ser importadas.
+  
   - [x] __3.9)__ Dizer como usar a classe Scanner sem importa-la.
+  
   - [x] __3.10)__ Explicar o motivo do uso dos métodos get e set para às variáveis de instância.
   
   - [x] __3.11)__ Modificar a classe Account da figura 3.8 adicionando um método para saque e a classe AccountTest para usar o novo método.
@@ -715,3 +720,186 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
           } //Fim do método main.
       
       } //Fim da classe InvoiceTest.
+      ```
+    
+  - [x] __3.13)__ Criar a classe Employee com 3 variáveis de instância, método construtor e métodos getter e setter. Ao lidar com uma variável numérica, usar estrutura de tomada de decisão para evitar receber valores negativos. Criar uma classe EmployeeTest para testar os objetos Employee.
+  
+    - Classe Employee.java.
+  
+      ```java
+      /*Questão 3.13.
+       * Criar uma classe chamada Employee que possua 3 variáveis de instância, método contrutor para inicializar
+       * às variáveis e em caso de variáveis númericas utilizar estrutura de tomada de decisão para não receber 
+       * valores negativos. Também  criar métodos getter e setter.
+       */
+      
+      
+      public class Employee { //Início da classe Employee.
+      
+          private String name; //Variável de instância tipo String.
+          private String lastName; //Variável de instância tipo String.
+          private double monthlySalary; //Variável de instância tipo double.
+      
+          //Método construtor, inicializa as variáveis de instância com os argumentos recebidos pelos parâmetros.
+          public Employee(String name, String lastName, double monthlySalary) { //Início do método construtor.
+      
+              this.name = name; //Variável de instância name recebe o valor do parâmetro name.
+              this.lastName = lastName; //Variável de instância lastName recebe valor do parâmetro lastName.
+      
+              if(monthlySalary >= 0) { //Início do if que verifica à expressão monthlySalary >= 0.
+      
+                  this.monthlySalary = monthlySalary; //Variável de instância monthlySalary recebe valor do parâmetro monthlySalary.
+      
+              } //Fim do if que verifica à expressão monthlySalary >= 0.
+      
+      
+          } //Fim do método construtor.
+      
+      
+          public void setName(String newName) { //Início do método newName.
+      
+              this.name = newName; //Variável de instância name recebe valor do parâmetro newName.
+      
+          } //Fim do método newName.
+      
+          public String getName() { //Início do método getName.
+              
+              return this.name; //Retorna valor da variável de instância name.
+      
+          } //Fim do método getName.
+      
+      
+          public void setLastName(String newLastName) { //Início do método setLastName.
+      
+              this.lastName = newLastName; //Variável de instância lastName recebe valor do parâmetro newLastName.
+      
+          } //Fim do método setLastName.
+      
+          public String getLastName() { //Início do método getLastName.
+      
+              return this.lastName; //Retorna o valor da variável de instância lastName.
+      
+          } //Fim do método getLastName.
+      
+      
+          public void setMonthlySalary(double newMontlySalary) { //Início do método setMonthlySalary.
+      
+              if(newMontlySalary >= 0.0) { //Início do if que verifica à expressão newMonthlySalary >= 0.
+                  
+                  System.out.printf("| Monthly salary is now $%.2f.%n", newMontlySalary); //Exibe Mensagem no terminal.
+                  this.monthlySalary = newMontlySalary; //Variável de instância monthlySalary recebe valor do parâmetro newMonthlySalary.
+      
+              } //Fim do if que verifica à expressão newMonthlySalary >= 0.
+      
+              if(newMontlySalary < 0) { //Início do if que verifica à espressão newMonthlySalary < 0.
+      
+                  System.out.println("| Invalid monthly salary."); //Exibe mensagem no terminal.
+      
+              } //Fim do if que verifica à expressão newMonthlySalary < 0.
+      
+          } //Fim do método setMonthlySalary.
+      
+          public double getMonthlySalary() { //Início do método getMontlySalary.
+      
+              return this.monthlySalary; //Retorna o valor da variável de instância monthlySalary.
+      
+          } //Fim do método getMonthlySalary.
+      
+      
+          public String getAnnualSalary() { //Início do método getAnnualSalary.
+      
+              return String.format("| Annual salary is $%.2f.%n", this.monthlySalary * 12); //Retorna mensagem contendo o salário anual.
+      
+          } //Fim do método getAnnualSalary.
+      
+      
+          public void increaseSalary(int percentageIncrease) { //Início do método increaseSalary.
+      
+              if(percentageIncrease > 0) { //Início do if que verifica à expressão percentageIncrease > 0.
+      
+                  System.out.printf("| Percentage increase is %d%%.%n", percentageIncrease); //Exibe mensagem no terminal com a porcentagem de aumento.
+                  this.monthlySalary = this.monthlySalary + this.monthlySalary * percentageIncrease/100; //Incrementa o salário mensal de acordo a porcentagem de aumento.
+                  System.out.printf("| New monthly salary is $%.2f.%n", this.monthlySalary); //Exibe mensagem no terminal com novo salário mensal.
+      
+              } //Fim do if que verifica à expressão percentageIncrease > 0.
+      
+              if(percentageIncrease <= 0) { //Início do if que verifica à expressão percentageIncrease <= 0.
+      
+                  System.out.println("| Invalid percentage."); //Exibe mensagem no terminal.
+      
+              } //Fim do if que verifica à expressão percentageIncrease <= 0.
+      
+          } //Fim do método increaseSalary.
+      
+      
+          public void decreaseSalary(int percentageDecrease) { //Início do método decreaseSalary.
+      
+              if(percentageDecrease > 0) { //Início do if que verifica à expressão percentageDecrease > 0.
+      
+                  System.out.printf("| Percentage decrease is %d%%.%n", percentageDecrease); //Exibe mensagem no terminal com porcentagem de desconto.
+                  this.monthlySalary = this.monthlySalary - this.monthlySalary * percentageDecrease/100;
+                  System.out.printf("| New monthly salary is $%.2f.%n", this.monthlySalary); //Exibe mensagem no terminal com novo salario mensal.
+      
+              } //Fim do if que verifica à expressão percentageDecrease > 0.
+      
+              if(percentageDecrease <= 0) { //Início do if que verifica à expressão percentageDecrease <= 0.
+      
+                  System.out.println("| Invalid percentage."); //Exibe mensagem no terminal.
+      
+              } //Fim do if que verifica à expressão percentageDecrease <= 0.
+      
+          } //Fim do método decreaseSalary.
+          
+      } //Fim da classe Employee.
+      ```
+  
+    - Classe EmployeeTest.java.
+  
+      ```java
+      /*Questão 3.13.
+       * Criar a classe EmployeeTest para testar a classe Employee. Criando 2 objetos Employee e exibir o salário
+       * anual e dar um aumento de 10% e exibir o salário anual novamente.
+       */
+      
+      import java.util.Scanner; //Importando a classe Scanner da java API.
+      
+      public class EmployeeTest { //Início da classe EmployeeTest.
+          
+          //Método main, inicia à execução da aplicação.
+          public static void main(String[] args) { //Início do método main.
+      
+              Scanner input = new Scanner(System.in); //Criando objeto da classe Scanner.
+      
+              Employee employee1 = new Employee("Jane", "Green", 1100.00); //Criando objeto da classe Employee.
+              Employee employee2 = new Employee("John", "Green", 1000.00); //Criando objeto da classe Employee.
+      
+              System.out.println("________________________________________"); //Exibindo um traço no terminal.
+              
+              System.out.print(employee1.getAnnualSalary()); //Exibindo no terminal o salário anual do empregado1.
+              System.out.print(employee2.getAnnualSalary()); //Exibindo no terminal o salário anual do empregado2.
+      
+              System.out.println("|_______________________________________"); //Exibindo um traço no terminal.
+      
+              System.out.printf("| Enter percentage decrease to %s: ", employee1.getName()); //Exibindo no terminal uma instrução para o usuário.
+              employee1.decreaseSalary(input.nextInt());
+      
+              System.out.println("|_______________________________________"); //Exibindo um traço no terminal.
+      
+              System.out.printf("| Enter percentage increase to %s: ", employee2.getName()); //Exibindo no terminal uma instrução para o usuário.
+              employee2.increaseSalary(input.nextInt());
+      
+              System.out.println("|_______________________________________"); //Exibindo um traço no terminal.
+      
+              System.out.print(employee1.getAnnualSalary()); //Exibindo no terminal o salário anual do empregado1.
+              System.out.print(employee2.getAnnualSalary()); //Exibindo no terminal o salário anual do empregado2.
+      
+              System.out.println("|_______________________________________"); //Exibindo um traço no terminal.
+      
+              input.close(); //Fecha o objeto input.
+      
+          } //Fim do método main.
+      
+      } //Fim da classe EmployeeTest.
+      ```
+  
+      
