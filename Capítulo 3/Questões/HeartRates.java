@@ -8,11 +8,11 @@ import java.util.Scanner; //Importando a classe Scanner da java API.
 
 public class HeartRates { //Início da classe HeartRates.
 
-    private String name;
-    private String lastName;
-    private int birthMonth;
-    private int birthDay;
-    private int birthYear;
+    private String name; //Variável de instância do tipo String
+    private String lastName; //Variável de instância do tipo String
+    private int birthMonth; //Variável de instância do tipo int
+    private int birthDay; //Variável de instância do tipo int
+    private int birthYear; //Variável de instância do tipo int
 
     public HeartRates(String name, String lastName, int birthMonth, int birthDay, int birthYear) { //Início do método construtor.
 
