@@ -2,8 +2,6 @@
  * para obter e configurar os atributos, além disso um método para definir uma letra a partir de sua nota.
  */
 
-import javax.lang.model.util.ElementScanner6;
-
 public class Student { //Início da classe Student.
 
     private String name; //Variável de instância do tipo String.
