@@ -1609,16 +1609,16 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 - **Exemplos:**
 
   - [x] __4.1)__ Diagrama UML de atividades da estrutura sequencial apresentado na figura 4.1.
-
-    ![Diagrama UML de atividades de uma estrutura sequencial.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama de atividades da estrutura de sequência.jpg)
+ 
+![Diagrama de atividades da estrutura de sequência](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/7f188e33-69dc-4a81-9217-67241b8ed627)
 
   - [x] __4.2)__ Diagrama UML de atividades de uma instrução de seleção única if apresentado na figura 4.2.
 
-    ![Diagrama UML de atividades de uma instrução de seleção única if.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama UML de atividades de uma instrução de seleção única if.jpg)
+    ![Diagrama UML de atividades de uma instrução de seleção única if](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/4ac43d80-ba0e-4f39-8f09-24e080c5ea35)
 
   - [x] __4.3)__ Diagrama UML de atividades de instrução de seleção dupla if...else apresentado na figura 4.3.
 
-    ![Diagrama UML de atividades de instrução de seleção dupla if...else.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama UML de atividades de instrução de seleção dupla if...else.jpg)
+    ![Diagrama UML de atividades de uma instrução de seleção única if](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/355542ca-622d-418b-b73a-31d58cec1986)
 
   - [x] __4.4)__ A classe Student.java na figura 4.4 no livro exemplifica o uso de instruções de seleção aninhadas. Já a classe StudentTest.java apresentada na figura 4.5 do livro ilustra o uso de objetos da classe Student.
 
@@ -1737,9 +1737,9 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
       } //Fim da classe StudentTest.
       ```
 
-  - [x] __4.5)__ Diagrama UML de atividades da instrução de repetição do…while apresentado na figura 4.6 do livro.
-
-    ![Diagrama UML de atividades da instrução de repetição do…while.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama UML de atividades da instrução de repetição while.jpg)
+  - [x] __4.5)__ Diagrama UML de atividades da instrução de repetição while apresentado na figura 4.6 do livro.
+    
+![Diagrama UML de atividades da instrução de repetição while](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/11e28a4a-eb08-497c-9113-87b753303458)
 
   - [x] __4.6)__ A classe ClassAverage apresentada na figura 4.8 implementa um programa de calculo de média para uma turma de 10 alunos usando a instrução de repetição.
 
@@ -1786,7 +1786,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
   - [x] __4.7)__ Pseudocódigo usando a técnica de refinamento passo a passo (top-down stepwise). Apresentado na figura 4.9 do livro, o pseudocódigo busca representar a resolução do calculo de média da turma no qual não se sabe o número de notas a serem inseridas, para isso é usado a instrução de repetição controlada por sentinela.
 
-    ![Pseudocódigo usando top-down stepwise para resolver problema do calculo de média com número de notas indefinidas.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Exemplo de pseudocódigo usando refinamento passo a passo.png)
+    ![Exemplo de pseudocódigo usando refinamento passo a passo](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/34236c85-f410-4ed9-a91d-1bea6ce6f3d0)
 
   - [x] __4.8)__ A classe ClassAverage2 implementa a resolução do problema de repetição controlada por sentinela obtido pelo pseudocódigo do exemplo 4.7 e mostrado no livro na figura 4.10.
 
@@ -1849,7 +1849,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
   - [x] __4.9)__ Pseudocódigo apresentado na figura 4.11 do livro, busca resolver o problema da contagem de alunos aprovados e reprovados em um exame.
 
-    ![Pseudocódigo para o problema dos resultados do exame.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Pseudocódigo para o problema dos resultados do exame.png)
+    ![Pseudocódigo para o problema dos resultados do exame](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/830a2879-9b9b-4372-bf94-e5ee3013e4d6)
 
   - [x] __4.10)__ Classe Analysis implementa mostrado na figura 4.12 do livro implementa o problema resolvido no pseudocódigo gerado no exemplo 4.9.
 
