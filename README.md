@@ -348,8 +348,8 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
     ​    Nesta parte do capítulo, o autor nos apresenta uma série de exemplos para começar a trabalhar com elementos GUI (Graphical User Interface), como são exemplos em classes distintas, optei por só inserir uma descrição do que o código faz quando compilado e executado.
 
-    - [x] __Exemplo Dialog1.java:__ Usando o método __ShowMessageDialog__ da classe __JOptionPane__ para exibir uma mensagem em uma caixa de diálogo.
-    - [x] __Exemplo NameDialog.java:__ Usando os métodos __ShowInputDialog__ e __ShowMessageDialog__ para receber uma string do usuário e retorna-la junto a uma mensagem através de uma caixa de diálogo.
+    - [x] __Exemplo:__ Classe Dialog1 usa o método __ShowMessageDialog__ da classe __JOptionPane__ para exibir uma mensagem em uma caixa de diálogo.
+    - [x] __Exemplo:__ Classe NameDialog usa os métodos __ShowInputDialog__ e __ShowMessageDialog__ para receber uma string do usuário e retorna-la junto a uma mensagem através de uma caixa de diálogo.
     - [x] __Exercício do estudo de caso GUI:__ Modifica o programa de adição na figura 2.7 (capítulo 2) para utilizar entrada e saída usando as caixas de diálogos mostradas nos exemplos anteriores.
 
 - __Exercícios de revisão:__
@@ -375,7 +375,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
   
   - [x] __3.11)__ Modificar a classe Account da figura 3.8 adicionando um método para saque e a classe AccountTest para usar o novo método.
   
-    - Classe Account.java.
+    - Classe Account.
   
       ```java
       /* Questão 3.11.
@@ -457,7 +457,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
        } //Fim da classe Account.
       ```
   
-    - Classe AccountTest.java.
+    - Classe AccountTest.
   
       ```java
       /*Questão 3.11.
@@ -538,7 +538,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
     
   - [x] __3.12)__ Criar uma classe chamada Invoice que representa a fatura de uma loja com 4 variáveis de instância, seus métodos getter e setter e estruturas de decisão para não aceitar valores inválidos. Além disso, criar a classe de teste para utilizar elementos da classe Invoice.
   
-    - Classe Invoice.java.
+    - Classe Invoice.
   
       ```java
       /*Questão 3.12.
@@ -658,7 +658,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
       } //Fim da classe Invoice.
       ```
   
-    - Classe InvoiceTest.java.
+    - Classe InvoiceTest.
   
       ``` java
       /*Questão 3.12.
@@ -724,7 +724,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
     
   - [x] __3.13)__ Criar a classe Employee com 3 variáveis de instância, método construtor e métodos getter e setter. Ao lidar com uma variável numérica, usar estrutura de tomada de decisão para evitar receber valores negativos. Criar uma classe EmployeeTest para testar os objetos Employee.
   
-    - Classe Employee.java.
+    - Classe Employee.
   
       ```java
       /*Questão 3.13.
@@ -853,7 +853,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
       } //Fim da classe Employee.
       ```
   
-    - Classe EmployeeTest.java.
+    - Classe EmployeeTest.
   
       ```java
       /*Questão 3.13.
@@ -904,7 +904,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
   
   - [x] __3.14)__ Criar classe Date com 3 variáveis de instância dia, mês e ano, um método construtor para inicializar às variáveis e métodos getter e setter para todas às variáveis. Além disso um método displayDate para exibir a data do objeto e uma classe DateTest para testar o objeto da classe.
   
-    - Classe Date.java.
+    - Classe Date.
   
       ```java
       /*Questão 3.14.
@@ -975,7 +975,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
       } //Fim da classe Date.
       ```
   
-    - Classe DateTest.java.
+    - Classe DateTest.
   
       ```java
       /*Questão 3.14.
@@ -1029,7 +1029,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
   
     __Obs:__ As classe Account e AccountTest permanecem as mesmas, as alterações feitas foram salvas na classe AccountTestModified.
   
-    - Classe AccountTestModified.java.
+    - Classe AccountTestModified.
   
       ```java
       /*Questão 3.15.
@@ -1120,7 +1120,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
   
   - [x] __3.16)__ Desenvolver uma classe chamada HeartRates com o intuito de calcular a frequência cardíaca máxima e a frequência cardíaca alvo do usuário. A classe inclui os atributos nome, sobrenome, dia, mês e ano de nascimento, métodos getter e setter para todos os atributos, método para calcular e retornar a idade, método para calcular frequência cardíaca máxima e a frequência cardíaca alvo. Por fim, escrever o aplicativo para testar as funcionalidades da classe.
   
-    - Classe HeartRates.java.
+    - Classe HeartRates.
   
       ```java
       /*Questão 3.16.
@@ -1310,7 +1310,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
   
   - [x] __3.17)__ Criar a classe HealthProfile com os atributos nome, sobrenome, sexo, data de nascimento (dia, mês e ano separados), altura e peso. Implementar método construtor para inicializar os atributos, métodos getter e setter para manipular e obter os atributos, método para calcular a idade, método para calcular o IMC (Índice de Massa Corporal) e métodos para calcular a frequência cardíaca máxima e frequência cardíaca alvo. Após implementado criar um objeto da classe, obter as informações e exibi-las.
   
-    - Classe HealthProfile.java.
+    - Classe HealthProfile.
   
       ```java
       /*Questão 3.17.
@@ -1603,3 +1603,627 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
       ```
   
       
+
+## Capítulo 4: Introdução as instruções de controle e operadores de atribuição compostos e operadores de incremento. 
+
+- **Exemplos:**
+
+  - [x] __4.1)__ Diagrama UML de atividades da estrutura sequencial apresentado na figura 4.1.
+
+    ![Diagrama UML de atividades de uma estrutura sequencial.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama de atividades da estrutura de sequência.jpg)
+
+  - [x] __4.2)__ Diagrama UML de atividades de uma instrução de seleção única if apresentado na figura 4.2.
+
+    ![Diagrama UML de atividades de uma instrução de seleção única if.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama UML de atividades de uma instrução de seleção única if.jpg)
+
+  - [x] __4.3)__ Diagrama UML de atividades de instrução de seleção dupla if...else apresentado na figura 4.3.
+
+    ![Diagrama UML de atividades de instrução de seleção dupla if...else.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama UML de atividades de instrução de seleção dupla if...else.jpg)
+
+  - [x] __4.4)__ A classe Student.java na figura 4.4 no livro exemplifica o uso de instruções de seleção aninhadas. Já a classe StudentTest.java apresentada na figura 4.5 do livro ilustra o uso de objetos da classe Student.
+
+    - Classe Student.
+
+      ```java
+      /*Exemplo da figura 4.4, a classe Student representa um aluno, armazena seu nome e nota e contém métodos
+       * para obter e configurar os atributos, além disso um método para definir uma letra a partir de sua nota.
+       */
+      
+      public class Student { //Início da classe Student.
+      
+          private String name; //Variável de instância do tipo String.
+          private double average; //Variável de instância do tipo double.
+      
+          public Student(String name, double average) { //Início do método construtor.
+      
+              this.name = name;
+      
+              if(average > 0.0) { //Início do if que avalia a expressão average > 0.0.
+      
+                  if(average <= 100.0) //if que avalia a expressão average <= 100.0.
+                      this.average = average; //Variável de instância average recebe valor do parâmetro average.
+      
+              } //Fim do if que avalia a expressão average > 0.0.
+      
+          } //Fim do método construtor.
+      
+      
+      
+          public void setName(String newName) { //Início do método setName.
+      
+              this.name = newName; //Variável de instância name recebe valor do parâmetro newName.
+      
+          } //Fim do método setName.
+      
+          public String getName() { //Início do método getName.
+      
+              return this.name; //Retorna o conteúdo da variável de instância name.
+      
+          } //Fim do método getName.
+      
+      
+      
+          public void setAverage(double newAverage) { //Início do método setAverage.
+      
+              if(newAverage > 0.0) { //Início do if que avalia a expressão newAverage > 0.0.
+      
+                  if(newAverage <= 100.0) //if que avalia a expressão newAverage <= 100.0.
+                      this.average = newAverage; //Variável de instância average recebe valor do parâmetro newAverage.
+      
+              } //Fim do if que avalia a expressão average > 0.0.
+      
+          } //Fim do método setAverage.
+      
+          public double getAverage() { //Início do método getAverage.
+      
+              return this.average; //Retorna valor da variável de instância average.
+      
+          } //Fim do método getAverage.
+      
+      
+      
+          public String getLetterGrade() { //Início do método getLetterGrade.
+      
+              String letterGrade = ""; //Declarando variável local.
+      
+              if(this.average >= 90) //Comando if que avalia a expressão average >= 90.
+                  letterGrade = "A"; //Variável local recebe "A" caso average seja maior ou igual a 90.
+      
+              else if(this.average >= 80) //Caso a outra condição não seja satisfeita, outro comando if avalia a expressão average >= 80.
+                  letterGrade = "B"; //Variável local recebe "B" caso average seja maior ou igual a 80.
+      
+              else if(this.average >= 70) //Caso as outras condições não sejam satisfeitas, outro comando if avalia a expressão average >= 70.
+                  letterGrade = "C"; //Variável local recebe "C" caso average seja maior ou igual a 70.
+      
+              else if(this.average >= 60) //Caso as outras condições não sejam satisfeitas, outro comando if avalia a expressão average >= 60.
+                  letterGrade = "D"; //Variável local recebe "D" caso average seja maior ou igual a 60.
+      
+              else //Caso as outras condições não sejam satisfeitas, ou seja, average é menor que 60.
+                  letterGrade = "F"; //Variável local recebe "F".
+      
+              return letterGrade; //Retorna o valor de letterGrade.
+      
+          } //Fim do método getLetterGrade
+      
+      
+      } //Fim da classe Student.
+      ```
+
+    - Classe StudentTest.
+
+      ```java
+      /* Exemplo da figura 4.5, a classe StudentTest cria objetos da classe Student e testa suas funcionalidades.*/
+      
+      public class StudentTest { //Início da classe StudentTest.
+          
+          //Método main, inicia a execução da aplicação.
+          public static void main(String[] args) { //Início do método main.
+              
+              Student account1 = new Student("Jane Green", 93.5); //Objeto da classe Student.
+              Student account2 = new Student("John Blue", 72.75); //Objeto da classe Student.
+      
+              System.out.println("________________________________________"); //Exibe traço no terminal.
+      
+              System.out.printf("| %s's letter grade is: %s%n",
+               account1.getName(), account1.getLetterGrade()); //Exibe a letra correspondente a nota do objeto account1
+      
+              System.out.printf("| %s's letter grade is: %s%n",
+               account2.getName(), account2.getLetterGrade()); //Exibe a letra correspondente a nota do objeto account2
+      
+              System.out.println("|_______________________________________"); //Exibe traço no terminal.
+      
+          } //Fim do método main.
+      
+      } //Fim da classe StudentTest.
+      ```
+
+  - [x] __4.5)__ Diagrama UML de atividades da instrução de repetição do…while apresentado na figura 4.6 do livro.
+
+    ![Diagrama UML de atividades da instrução de repetição do…while.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Diagrama UML de atividades da instrução de repetição while.jpg)
+
+  - [x] __4.6)__ A classe ClassAverage apresentada na figura 4.8 implementa um programa de calculo de média para uma turma de 10 alunos usando a instrução de repetição.
+
+    ```java
+    /*Exemplo da figura 4.8, onde é feito um programa para receber as notas de 10 alunos usando a estrutura
+     * de repetição while e por fim calculando e exibindo a média da turma.
+     */
+    
+    import java.util.Scanner;
+    
+     public class ClassAverage { //Início da classe ClassAverage.
+        
+        //Método main, inicia a execução da aplicação.
+        public static void main(String[] args) { //Início do método main.
+            
+            int total = 0; //Criando uma variável inteira e inicializando-a com valor 0.
+            int studentsNumber = 1; //Criando uma variável inteira para controle de repetições.
+            Scanner input = new Scanner(System.in); //Criando objeto da classe Scanner para entrada das notas.
+    
+            System.out.println("________________________________________"); //Exibe traço no terminal.
+    
+            while(studentsNumber <= 10) { //Início da estrutura de repetição.
+    
+                System.out.printf("| Enter %dº's student note: ", studentsNumber); //Exibe mensagem ao usuário.
+                total = total + input.nextInt(); //Recebe nota do usuário, soma ao total e atribui o resultado a total.
+                studentsNumber = studentsNumber + 1; //Incrementa em 1 a variável studentsNumber.
+    
+            } //Fim da estrutura de repetição.
+    
+            System.out.println("|_______________________________________"); //Exibe traço no terminal.
+    
+            System.out.printf("| Total grade is %d%n", total); //Exibe no terminal o total.
+    
+            System.out.printf("| Class average is %.2f%n", total/10.0); //Exibe no terminal o calculo da média.
+    
+            System.out.println("|_______________________________________"); //Exibe traço no terminal.
+    
+            input.close(); //Fecha o objeto input.
+    
+        } //Fim do método main.
+    
+    } //Fim da classe ClassAverage.
+    ```
+
+  - [x] __4.7)__ Pseudocódigo usando a técnica de refinamento passo a passo (top-down stepwise). Apresentado na figura 4.9 do livro, o pseudocódigo busca representar a resolução do calculo de média da turma no qual não se sabe o número de notas a serem inseridas, para isso é usado a instrução de repetição controlada por sentinela.
+
+    ![Pseudocódigo usando top-down stepwise para resolver problema do calculo de média com número de notas indefinidas.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Exemplo de pseudocódigo usando refinamento passo a passo.png)
+
+  - [x] __4.8)__ A classe ClassAverage2 implementa a resolução do problema de repetição controlada por sentinela obtido pelo pseudocódigo do exemplo 4.7 e mostrado no livro na figura 4.10.
+
+    *__Obs:__* Na classe abaixo alguns elementos diferem da classe mostrada da figura 4.10 do livro, pois antes de copiar o exemplo do livro, tentei solucionar o problema com meus conhecimentos.
+
+    ```java
+    /*Implementando minha versão da resolução do exemplo apresentado na figura 4.10
+     * Resolvendo problema da média da classe usando repetição controlada por sentinela.
+     */
+    
+    import java.util.Scanner; //Importando a classe Scanner da Java API.
+    
+    public class ClassAverage2 { //Início da classe ClassAverage2.
+        
+        //Método main, inicia a execução da aplicação.
+        public static void main(String[] args) {//Início do método main.
+            
+            Scanner input = new Scanner(System.in); //Instanciando objeto da classe Scanner para entrada de dados.
+    
+            int total = 0; //Criando e inicializando variável do tipo int com valor 0.
+            int counter = 0; //Criando e inicializando variável do tipo int com valor 0.
+            
+    
+            System.out.println("________________________________________"); //Exibe traço no terminal.
+    
+            System.out.printf("| Enter %dª grade or -1 to quit: ", counter + 1);
+            int grade = input.nextInt(); //Atribuindo valor recebido a variável grade.
+    
+            while(grade != -1) { //Início da estrutura de repetição controlada pela expressão grade != -1.
+    
+                total = total + grade; //Incrementa o valor de total com o valor de grade.
+                counter = counter + 1; //Incrementa o valor de counter em 1.
+    
+                System.out.printf("| Enter %dª grade or -1 to quit: ", counter + 1); //Exibe mensagem no terminal.
+                grade = input.nextInt(); //Recebe valor do teclado.     
+    
+            } //Fim da estrutura de repetição controlada pela expressão grade != -1.
+    
+            System.out.println("|_______________________________________"); //Exibe traço no terminal.
+    
+            if(total == 0) //Estrutura de decisão que avalia a expressão total == 0.
+                System.out.println("| No grades were entered."); //Mensagem exibida caso a espressão total == 0 for verdadeira
+    
+            else { //Início da decisão tomada caso a expressão total == 0 seja falsa.
+    
+                double classAverage = (double) total/counter; //Calculando e  o valor da média e o atribuindo a variável classAverage.
+                System.out.printf("| Total of the %d grades entered is %d.%n", counter, total); //Exibindo mensagem com total de notas e a soma total.
+                System.out.printf("| Class average is: %.2f%n", classAverage); //Exibindo a média da turma.
+    
+            } //Fim da estrutura de decisão tomada caso a expressão total == 0 seja falsa
+    
+            System.out.println("|_______________________________________"); //Exibe traço no terminal.
+    
+            input.close(); //Fecha objeto input.
+    
+        } //Fim do método main.
+    
+    } //Fim da classe ClassAverage2.
+    ```
+
+  - [x] __4.9)__ Pseudocódigo apresentado na figura 4.11 do livro, busca resolver o problema da contagem de alunos aprovados e reprovados em um exame.
+
+    ![Pseudocódigo para o problema dos resultados do exame.](/media/charlesson/Projetos Git/Java Deitel/Java como programar - Exercícios/Capítulo 4/Exemplos/Pseudocódigo para o problema dos resultados do exame.png)
+
+  - [x] __4.10)__ Classe Analysis implementa mostrado na figura 4.12 do livro implementa o problema resolvido no pseudocódigo gerado no exemplo 4.9.
+
+    ```java
+    /*Implementando exemplo da figura 4.12, cujo a demanda a ser atendida é receber o total de 10 valores
+     * do resultado de alunos de um curso em um determinado exame. Computar quais foram aprovados e quais não
+     * e exibir o resultado demandado no terminal.
+     */
+    
+    import java.util.Scanner; //Importando a classe Scanner da Java API.
+    
+    public class Analysis { //Início da classe Analysis.
+        
+        //Método main, inicia a execução da aplicação.
+        public static void main(String[] args) { //Início do método main.
+            
+            Scanner input = new Scanner(System.in); //Instanciando objeto da classe Scanner.
+    
+            int totalApproved = 0; //Variável do tipo int inicializada com valor 0.
+            int totalDisapproved = 0; //Variável do tipo int inicializada com valor 0.
+            int counter = 0; //Variável do tipo int inicializada com valor 0.
+    
+            System.out.println("_________________________________________"); //Exibe traço no terminal.
+    
+            while(counter < 10) { //Início da estrutura de repetição controlada pela expressão counter < 10.
+    
+                System.out.print("| Enter result (1 = pass, 2 = fail): "); //Exibe mensagem no terminal.
+                int result = input.nextInt(); //Váriavel do tipo int para receber a entrada do usuáriol
+    
+                if(result == 1) { //Início da estrutura de decisão controlada pela expressão result == 1.
+    
+                    totalApproved = totalApproved + 1; //1 é somado ao valor de totalApproved e atribuido a totalApproved.
+                    counter = counter + 1; //1 é somado ao valor de counter e atribuido a counter.
+    
+                } else if(result == 2) { //Fim da estrutura de decisão anterior e início da estrutura de decisão controlada pela expressão.
+    
+                    totalDisapproved = totalDisapproved + 1; //1 é somado ao valor de totalDisapproved e atribuido a totalDisapproved.
+                    counter = counter + 1; //1 é somado ao valor de counter e atribuido a counter.
+    
+                } else { //Fim da estrutura de decisão anterior e início da estrutura que abranje qualquer outro valor inserido.
+                    
+                    System.out.println("| Invalid value."); //Exibe mensagem no terminal.
+    
+                } //Fim da estrutura de decisão que abrange qualquer valor.
+    
+            } //Fim da estrutura de repetição controlada pela expressão counter < 10.
+    
+    
+            System.out.println("|________________________________________"); //Exibe traço no terminal.
+    
+            System.out.printf("| Passed: %d.%n", totalApproved); //Exibe mensagem no terminal com número de aprovados.
+    
+            System.out.printf("| Failed: %d.%n", totalDisapproved); //Exibe mensagem no terminal com o número de reprovados.
+    
+            if(totalApproved > 8) { //Início da estrutura de decisão controlada pela expressão totalApproved > 8.
+    
+                System.out.println("|________________________________________"); //Exibe traço no terminal.
+                System.out.println("| Bonus to instructor!"); //Exibe mensagem no terminal.
+    
+            } //Fim da estrutura de decisão controlada pela expressão totalApproved > 8.
+    
+            System.out.println("|________________________________________"); //Exibe traço no terminal.
+    
+            input.close(); //Fecha o objeto input.
+    
+        } //Fim do método main.
+    
+    } //Fim da classe Analysis.
+    ```
+
+  - [x] __4.11)__ Classe Increment mostrada na figura 4.15 do livro, ilustra como usar operadores de pós-incremento e pré-incremento.
+
+    ```java
+    /*Exemplo da figura 4.15, classe Increment mostra como usar os operadores de pré-incremento e pós-incremento.*/
+    
+    public class Increment { //Início da classe Increment.
+    
+        //Método main, inicia a execução da aplicação.
+        public static void main(String[] args) { //Início do método main.
+            
+            int c = 5; //Inicializando variável inteira com valor 5.
+    
+            System.out.println("_______________________________________"); //Exibe traço no terminal.
+    
+            System.out.printf("| c before postincrement: %d.%n", c); //Exibindo o valor de c antes do pós-incremento.
+            System.out.printf("| postincrementing c: %d.%n", c++); //Exibindo o valor de c usando o operador de pós-incremento.
+            System.out.printf("| c after postincrement: %d.%n", c); //Exivindo o valor de c após o uso do pós-incremento.
+    
+            System.out.println("|______________________________________"); //Exibe traço no terminal.
+    
+            c = 5; //Inicializando variável inteira com valor 5.
+    
+            System.out.printf("| c before preincrement: %d.%n", c); //Exibindo o valor de c antes do pré-incremento.
+            System.out.printf("| preincrementing c: %d.%n", ++c); //Exibindo o valor de c usando o operador de pré-incremento.
+            System.out.printf("| c after preincrementing: %d.%n", c); //Exibindo o valor de c após o uso do pré-incremento.
+    
+            System.out.println("|______________________________________"); //Exibe traço no terminal.
+        } //Fim do método main.
+    
+    } //Fim da classe Increment.
+    ```
+
+    ### (Opcional) Estudo de caso de GUIs e imagens gráficas: criando desenhos simples
+
+    ​	Esta parte do capítulo mostra alguns recursos novos (as classes JPanel e Graphics) para ilustrar figuras em aplicações GUI. Primeiro nos traz um exemplo implementado nas classes DrawPanel e DrawPanelTest, ilustrados nas figuras 4.18 e 4.19 do livro. E após o exemplo, propõe alguns exercícios.
+
+    - [x] __Exemplo:__ classes DrawPanel, DrawPanelTest.
+
+      ```java
+      /*Exemplo da figura 4.18, onde é implementada uma classe para desenhar traços usando componentes GUI.*/
+      
+      import java.awt.Graphics; //Importando a classe Graphics da Java API.
+      import javax.swing.JPanel; //Importando a classe JPanel da Java API.
+      
+      public class DrawPanel extends JPanel { //Início da classe DrawPanel.
+      
+          public void paintComponent(Graphics g) { //Início do método paintComponent.
+      
+              super.paintComponent(g); //Chama paintComponent para assegurar que o painel é exibido corretamente.
+      
+              int width = getWidth(); //Variável local tipo int recebe valor da largura total.
+              int height = getHeight(); //Variável local tipo int recebe valor da altura total.
+      
+              g.drawLine(0, 0, width, height); //Desenha uma linha do canto superior esquerdo até o canto inferior direito.
+              g.drawLine(0, height, width, 0); //Desenha uma linha do canto inferior esquerdo até o canto superior direito.
+      
+          } //Fim do método paintComponent.
+          
+      } //Fim da classe DrawPanel.
+      ```
+
+      ```java
+      /*Exemplo da figura 4.19, a classe DrawPanelTest é usada exibir um objeto da classe JPanel.*/
+      
+      import javax.swing.JFrame; //Importando a classe JFrame da Java API.
+      
+      public class DrawPanelTest { //Início da classe DrawPanelTest.
+      
+          //Método main, inicia a execução da aplicação.
+          public static void main(String[] args) { //Início do método main.
+              
+              DrawPanel panel = new DrawPanel(); //Instanciando um objeto da classe DrawPanel.
+      
+              JFrame application = new JFrame(); //Cria um quadro para armazenar o painel.
+      
+              application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Configurando o frame para ser encerrado quando fechado.
+      
+              application.add(panel); //Adicionando o objeto da clsse DrawPanel no quadro.
+              application.setSize(250, 250); //Configurando o tamanho do quadro.
+              application.setVisible(true); //Alterando a visibilidade do quadro.
+      
+          } //Fim do método main.
+          
+      } //Fim da classe DrawPanelTest.
+      ```
+
+    __Exercícios do estudo de caso sobre GUIs e imagens gráficas:__
+
+    - [ ] __4.1)__ Utilizar loops e instruções de controle para desenhar linhas pode levar a muitos projetos interessantes.
+
+      - [x] __a)__ Crie o projeto na captura de tela esquerda da Figura 4.20. Esse projeto desenha linhas do canto superior esquerdo, estendendo-as até que cubram a metade superior esquerda do painel. Uma abordagem é dividir a largura e altura em um número igual de passos (descobrimos que 15 passos funcionam bem). A primeira extremidade de uma linha sempre estará no canto superior esquerdo (0, 0).
+        A segunda extremidade pode ser encontrada iniciando no canto inferior esquerdo e movendo-se para cima em um passo vertical e para a direita em um passo horizontal. Desenhe uma linha entre as duas extremidades. Continue movendo-se para cima e para o passo à direita a fim de encontrar cada extremidade sucessiva. A figura deve ser dimensionada de maneira correspondente à medida que você
+        redimensiona a janela.
+
+        - Classes Exercicio41A e Exercicio41ATest.
+
+          ```java
+          /*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra a. */
+          
+          import java.awt.Graphics; //Importando a classe Graphics da Java API.
+          import javax.swing.JPanel; //Importando a classe JPanel da Java API.
+          
+          public class Exercicio41A extends JPanel { //Início da classe Exercicio41A.
+              
+              public void paintComponent(Graphics g) { //Início do método paintComponent.
+                  
+                  super.paintComponent(g); //Chama método paintComponent da superclasse.
+          
+                  
+                  int numberLines = 0; //Cria variável local do tipo int e inicializa com valor 0.
+          
+                  int widthDown = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  int widthUp = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  int heightDown = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+                  int heightUp = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+          
+          
+                  while(numberLines <= 15) { //Início da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+                      if(numberLines < 8){ //Início da instrução de seleção controlada pela expressão numberLines < 8.
+          
+                          g.drawLine(0, 0, widthDown/2, heightDown/2); //Desenha uma linha de acordo os argumentos passados.
+                          widthDown -= 35; //Decrementa a variável widthDown em 35.
+                          heightDown += 35; //Incrementa a variável heigthDown em 35.
+                      
+                      } else { //Caso a expressão seja falsa o bloco else é executado.
+          
+                          g.drawLine(0, 0, widthUp/2, heightUp/2);
+                          widthUp += 35; //Incrementa a variável widthUp em 35.
+                          heightUp -= 35; //Decrementa a variável heightUp em 35.
+          
+                      } //Fim da instrução de seleção controlada pela expressão numberLines < 8.
+          
+                      numberLines++; //Incrementa a variável local numberLines.
+                      
+                  } //Fim da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+              } //Fim do método paintComponent.
+          
+          } //Fim da classe Exercicio41A.
+          
+          ```
+
+          ```java
+          /*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra a.*/
+          
+          import javax.swing.JFrame; //Importando a classe JFrame da Java API.
+          
+          public class Exercicio41ATeste { //Início da classe Exercicio41ATeste.
+          
+              //Método main, inicia a execução da aplicação.
+              public static void main(String[] args) { //Início do método main.
+          
+                  Exercicio41A panel = new Exercicio41A(); //Criando objeto da class Exercicio41A
+          
+                  JFrame application = new JFrame(); //Criando objeto da classe JFrame.
+          
+                  application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Configurando o comportamento da aplicação ao ser fechada.
+          
+                  application.add(panel); //Adicionando o objeto panel a aplicação.
+                  application.setVisible(true); //Tornando a aplicação visível.
+                  application.setSize(300, 300); //Configurando a altura e largura da aplicação.
+                  
+              } //Fim do método main.
+              
+          } //Fim da classe Exercicio41ATeste.
+          ```
+
+      - [ ] __b)__ Modifique sua resposta da parte (a) para que as linhas se estendam dos quatro cantos, como mostrado na captura de tela da direita na Figura 4.20. As linhas de cantos opostos devem se cruzar no meio.
+      
+        - Classes Exercicio41A modificada, a classe Exercicio41Teste permanece a mesma.
+      
+          ```java
+          /*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra a. */
+          
+          import java.awt.Graphics; //Importando a classe Graphics da Java API.
+          import javax.swing.JPanel; //Importando a classe JPanel da Java API.
+          
+          public class Exercicio41A extends JPanel { //Início da classe Exercicio41A.
+              
+              public void paintComponent(Graphics g) { //Início do método paintComponent.
+                  
+                  super.paintComponent(g); //Chama método paintComponent da superclasse.
+          
+                  
+                  int numberLines = 0; //Cria variável local do tipo int e inicializa com valor 0.
+          
+                  int widthDown = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  int widthUp = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  int heightDown = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+                  int heightUp = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+          
+          
+                  while(numberLines <= 15) { //Início da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+                      if(numberLines < 8){ //Início da instrução de seleção controlada pela expressão numberLines < 8.
+                          //Bloco executado caso a expressão numberLines < 8 seja verdadeira.
+          
+                          g.drawLine(0, 0, widthDown/2, heightDown/2); //Desenha uma linha de acordo os argumentos passados como parâmetros.
+                          widthDown -= 35; //Decrementa a variável widthDown em 35.
+                          heightDown += 35; //Incrementa a variável heigthDown em 35.
+                      
+                      } else { //Caso a expressão seja falsa, o bloco else é executado.
+          
+                          g.drawLine(0, 0, widthUp/2, heightUp/2);
+                          widthUp += 35; //Incrementa a variável widthUp em 35.
+                          heightUp -= 35; //Decrementa a variável heightUp em 35.
+          
+                      } //Fim da instrução de seleção controlada pela expressão numberLines < 8.
+          
+                      numberLines++; //Incrementa a variável local numberLines.
+                      
+                  } //Fim da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+          
+                  numberLines = 0; //Atribui 0 a variável numberLines.
+          
+                  widthDown = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  widthUp = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  heightDown = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+                  heightUp = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+          
+                  while(numberLines <= 15) { //Início da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+                      if(numberLines < 8) { //Início da instrução de escolha controlada pela expressão numberLines < 8.
+                          //Bloco executado caso a expressão numberLines < 8 seja verdadeira.
+          
+                          g.drawLine(getWidth(), getHeight(), widthDown/2, heightDown/2); //Desenha uma linha de acordo os argumentos passados como parâmetros.
+                          widthDown -= 35; //Decrementa a variável widthDown em 35.
+                          heightDown += 35; //Incrementa a variável heigthDown em 35.
+          
+                      } else { //Caso a expressão seja falsa, o bloco else é executado.
+          
+                          g.drawLine(getWidth(), getHeight(), widthUp/2, heightUp/2); //Desenha uma linha de acordo os argumentos passados como parâmetros.
+                          widthUp += 35; //Incrementa a variável widthUp em 35.
+                          heightUp -= 35; //Decrementa a variável heightUp em 35.
+          
+                      } //Fim da instrução de escolha controlada pela expressão numberLines < 8.
+          
+                      numberLines++; //Incrementa a variável local numberLines.
+          
+                  } //Fim da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+          
+                  numberLines = 0; //Atribui 0 a variável numberLines.
+          
+                  widthDown = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  widthUp = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  heightDown = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+                  heightUp = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+          
+                  while(numberLines <= 15) { //Início da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+                      if(numberLines < 8) { //Início da instrução de seleção controlada pela expressão numberLines < 8.
+                          //Bloco executado caso a expressão numberLines < 8 seja verdadeira.
+          
+                          g.drawLine(getWidth(), 0, widthDown/2, heightDown/2); //Desenha uma linha de acordo os argumentos passados como parâmetros.
+                          widthDown += 35; //Incrementa a variável local widthDown em 35.
+                          heightDown += 35; //Incrementa a variável local heightDown em 35.
+          
+                      } else { //Caso a expressão seja falsa, o bloco else é executado.
+          
+                          g.drawLine(getWidth(), 0, widthUp/2, heightUp/2); //Desenha uma linha de acordo os argumentos passados como parâmetro.
+                          widthUp -= 35; //Decrementa a variável local widthUp em 35.
+                          heightUp -=35; //Decrementa a variável local heightUp em 35.
+          
+                      } //Fim da instrução de seleção controlada pela expressão numberLines < 8.
+          
+                      numberLines++; //Incrementa a variável local numberLines em 1.
+          
+                  } //Fim da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+          
+                  numberLines = 0; //Atribui 0 a variável numberLines.
+          
+                  widthDown = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  widthUp = getWidth(); //Cria variável local tipo do int e inicializa com a largura da janela.
+                  heightDown = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+                  heightUp = getHeight(); //Cria variável local do tipo int e inicializa com a altura da janela.
+          
+                  while(numberLines <= 15) { //Início da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+                      if(numberLines < 8) { //Início da instrução de seleção controlada pela expressão numberLines < 8.
+                          //Bloco executado caso a expressão numberLines < 8 seja verdadeira.
+          
+                          g.drawLine(0, getHeight(), widthDown/2, heightDown/2);
+                          widthDown += 35; //Incrementa a variável local em 35.
+                          heightDown += 35; //Incrementa a variável local em 35.
+          
+                      } else { //Caso a expressão seja falsa, o bloco else é executado.
+          
+                          g.drawLine(0, getHeight(), widthUp/2, heightUp/2);
+                          widthUp -= 35; //Decrementa a variável local em 35.
+                          heightUp -= 35; //Decrementa a variável local em 35.
+          
+                      } //Fim da instrução de seleção controlada pela expressão numberLines < 8.
+          
+                      numberLines++; //Incrementa a variável local em 1.
+          
+                  } //Fim da instrução de repetição controlada pela expressão numberLines <= 15.
+          
+              } //Fim do método paintComponent.
+          
+          } //Fim da classe Exercicio41A.
+          ```
+      
+          
