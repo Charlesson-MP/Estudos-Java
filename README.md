@@ -1609,7 +1609,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 - **Exemplos:**
 
   - [x] __4.1)__ Diagrama UML de atividades da estrutura sequencial apresentado na figura 4.1.
- 
+
 ![Diagrama de atividades da estrutura de sequência](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/7f188e33-69dc-4a81-9217-67241b8ed627)
 
   - [x] __4.2)__ Diagrama UML de atividades de uma instrução de seleção única if apresentado na figura 4.2.
@@ -1739,6 +1739,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
   - [x] __4.5)__ Diagrama UML de atividades da instrução de repetição while apresentado na figura 4.6 do livro.
     
+
 ![Diagrama UML de atividades da instrução de repetição while](https://github.com/Charlesson-MP/Estudos-Java/assets/86690606/11e28a4a-eb08-497c-9113-87b753303458)
 
   - [x] __4.6)__ A classe ClassAverage apresentada na figura 4.8 implementa um programa de calculo de média para uma turma de 10 alunos usando a instrução de repetição.
@@ -2226,7 +2227,7 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
           } //Fim da classe Exercicio41A.
           ```
       
-    - [ ] __4.2)__ A Figura 4.21 do livro exibe dois projetos adicionais criados utilizando-se loops while e drawLine.
+    - [x] __4.2)__ A Figura 4.21 do livro exibe dois projetos adicionais criados utilizando-se loops while e drawLine.
     
       - [x] __a)__ Crie o projeto na captura de tela da esquerda na Figura 4.21. Comece dividindo cada borda em um número igual de incrementos (escolhemos 15 novamente). A primeira linha inicia no canto superior esquerdo e termina um passo à direita na extremidade inferior. Para cada linha sucessiva, move-se para baixo um incremento na borda esquerda e um incremento para a direita na borda inferior. Continue desenhando linhas até alcançar o canto inferior direito. A figura deve ser dimensionada à medida que você redimensiona a janela, de modo que as extremidades sempre toquem as bordas.
     
