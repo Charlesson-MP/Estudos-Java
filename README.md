@@ -2008,9 +2008,9 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
 
     __Exercícios do estudo de caso sobre GUIs e imagens gráficas:__
 
-    - [ ] __4.1)__ Utilizar loops e instruções de controle para desenhar linhas pode levar a muitos projetos interessantes.
+    - [x] __4.1)__ Utilizar loops e instruções de controle para desenhar linhas pode levar a muitos projetos interessantes.
 
-      - [x] __a)__ Crie o projeto na captura de tela esquerda da Figura 4.20. Esse projeto desenha linhas do canto superior esquerdo, estendendo-as até que cubram a metade superior esquerda do painel. Uma abordagem é dividir a largura e altura em um número igual de passos (descobrimos que 15 passos funcionam bem). A primeira extremidade de uma linha sempre estará no canto superior esquerdo (0, 0).
+      - [x] __a)__ Crie o projeto na captura de tela esquerda da Figura 4.20 do livro. Esse projeto desenha linhas do canto superior esquerdo, estendendo-as até que cubram a metade superior esquerda do painel. Uma abordagem é dividir a largura e altura em um número igual de passos (descobrimos que 15 passos funcionam bem). A primeira extremidade de uma linha sempre estará no canto superior esquerdo (0, 0).
         A segunda extremidade pode ser encontrada iniciando no canto inferior esquerdo e movendo-se para cima em um passo vertical e para a direita em um passo horizontal. Desenhe uma linha entre as duas extremidades. Continue movendo-se para cima e para o passo à direita a fim de encontrar cada extremidade sucessiva. A figura deve ser dimensionada de maneira correspondente à medida que você
         redimensiona a janela.
 
@@ -2088,12 +2088,12 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
           } //Fim da classe Exercicio41ATeste.
           ```
 
-      - [ ] __b)__ Modifique sua resposta da parte (a) para que as linhas se estendam dos quatro cantos, como mostrado na captura de tela da direita na Figura 4.20. As linhas de cantos opostos devem se cruzar no meio.
+      - [x] __b)__ Modifique sua resposta da parte (a) para que as linhas se estendam dos quatro cantos, como mostrado na captura de tela da direita na Figura 4.20. As linhas de cantos opostos devem se cruzar no meio.
       
         - Classes Exercicio41A modificada, a classe Exercicio41Teste permanece a mesma.
       
           ```java
-          /*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra a. */
+          /*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra (a) e (b). */
           
           import java.awt.Graphics; //Importando a classe Graphics da Java API.
           import javax.swing.JPanel; //Importando a classe JPanel da Java API.
@@ -2226,4 +2226,161 @@ __*Obs: Neste capítulo, ao invés de criar uma nova classe para cada modificaç
           } //Fim da classe Exercicio41A.
           ```
       
+    - [ ] __4.2)__ A Figura 4.21 do livro exibe dois projetos adicionais criados utilizando-se loops while e drawLine.
+    
+      - [x] __a)__ Crie o projeto na captura de tela da esquerda na Figura 4.21. Comece dividindo cada borda em um número igual de incrementos (escolhemos 15 novamente). A primeira linha inicia no canto superior esquerdo e termina um passo à direita na extremidade inferior. Para cada linha sucessiva, move-se para baixo um incremento na borda esquerda e um incremento para a direita na borda inferior. Continue desenhando linhas até alcançar o canto inferior direito. A figura deve ser dimensionada à medida que você redimensiona a janela, de modo que as extremidades sempre toquem as bordas.
+    
+        - Classes Exercicio42A e Exercicio42ATeste.
+    
+        ```java
+        /*Exercício do estudo de caso GUIs e imagens gráficas 4.2 letra (a). */
+        
+        import javax.swing.JPanel; //Importando a classe JPanel da Java API.
+        import java.awt.Graphics; //Importando a classe Graphics da java API.
+        
+        public class Exercicio42A extends JPanel { //Início da classe Exercicio42A.
+            
+            public void paintComponent(Graphics g) { //Início do método paintComponent.
+        
+                int widthX = 0; //Valor 0 é atribuida a variável local do tipo int.
+                int widthY = 15; //Valor 0 é atribuida a variável local do tipo int.
+                int heightX = 0; //Valor 0 é atribuida a variável local do tipo int.
+                int heightY = getHeight(); //Valor da altura da janela é atribuida a variável local do tipo int.
+        
+                int numberLines = 0; //Valor 0 é atribuido a variável local do tipo int.
+        
+                while(numberLines < 15) { //Início da instrução de repetição controlada pela espressão numberLines < 15.
+        
+                    g.drawLine(widthX, heightX, widthY, heightY); //Desenha uma linha de acordo os argumentos passados como parâmetro.
+        
+                    widthY += 15; //Incrementa a variável widthY em 15.
+                    heightX += 15; //Incrementa a variável heightX em 15.
+        
+                    numberLines++; //Incrementa em a variável numberLines em 1.
+        
+                } //Fim da instrução de repetição controlada pela espressão numberLines < 15.
+        
+            } //Fim do método paintComponent.
+        
+        } //Fim da classe Exercício42A.
+        ```
+    
+        ```java
+        /*Exercício do estudo de caso GUIs e imagens gráficas 4.2 letra (a).*/
+        
+        import javax.swing.JFrame; //Importando a classe JFrame da Java API.
+        
+        public class Exercicio42ATeste { //Início da classe Exercicio42ATeste.
+            
+            //Método main, inicia a execução da aplicação.
+            public static void main(String[] args) { //Início do método main.
+        
+                Exercicio42A panel = new Exercicio42A(); //Instanciando objeto da classe Exercicio42A.
+        
+                JFrame application = new JFrame(); //Instanciando objeto da classe JFrame.
+        
+                application.add(panel); //Adicionando objeto panel ao objeto application.
+                application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Configurando ação de fechamento da aplicação.
+                application.setSize(250, 250); //Configurando as dimenções da janela da aplicação.
+                application.setVisible(true); //Configurando a visibilidade da applicação.
+        
+            } //Fim do método main.
+        
+        } //Fim da classe Exercicio42ATeste.
+        ```
+    
+      - [x] __b)__ Modifique sua resposta da parte (a) para espelhar o projeto em todos os quatro cantos, como mostrado na captura de tela da direita na Figura 4.21 do livro.
+    
+        - Classe Exercicio42A modificada, a classe Exercicio42A não necessita de alterações.
+    
+          ```java
+          /*Exercício do estudo de caso GUIs e imagens gráficas 4.2 letra (a) e (b). */
+          
+          import javax.swing.JPanel; //Importando a classe JPanel da Java API.
+          import java.awt.Graphics; //Importando a classe Graphics da java API.
+          
+          public class Exercicio42A extends JPanel { //Início da classe Exercicio42A.
+              
+              public void paintComponent(Graphics g) { //Início do método paintComponent.
+          
+                  int widthX = 0; //Valor 0 é atribuido a variável local do tipo int.
+                  int widthY = 15; //Valor 15 é atribuido a variável local do tipo int.
+                  int heightX = 0; //Valor 0 é atribuido a variável local do tipo int.
+                  int heightY = getHeight(); //Valor da altura da janela é atribuido a variável local do tipo int.
+          
+                  int numberLines = 0; //Valor 0 é atribuido a variável local do tipo int.
+          
+                  while(numberLines < 15) { //Início da instrução de repetição controlada pela espressão numberLines < 15.
+          
+                      g.drawLine(widthX, heightX, widthY, heightY); //Desenha uma linha de acordo os argumentos passados como parâmetro.
+          
+                      widthY += 15; //Incrementa a variável widthY em 15.
+                      heightX += 15; //Incrementa a variável heightX em 15.
+          
+                      numberLines++; //Incrementa em a variável numberLines em 1.
+          
+                  } //Fim da instrução de repetição controlada pela espressão numberLines < 15.
+          
+          
+                  widthX = getWidth(); //Valor da largura da janela é atribuido a variável local do tipo int.
+                  widthY = getWidth() - 15; //Valor da largura da janela menos o valor 15 é atribuido a variável local do tipo int.
+                  heightX = 0; //Valor 0 é atribuido a variável local do tipo int.
+                  heightY = getHeight(); //Valor da altura da janela é atribuido a variável local do tipo int.
+          
+                  numberLines = 0; //Valor 0 é atribuido a variável local do tipo int.
+          
+                  while(numberLines < 15) { //Início da instrução de repetição controlada pela espressão numberLines < 15.
+          
+                      g.drawLine(widthX, heightX, widthY, heightY); //Desenha uma linha de acordo os argumentos passados como parâmetro.
+          
+                      widthY -= 15; //Decrementa a variável widthY em 15.
+                      heightX += 15; //Incrementa a variável heightX em 15.
+          
+                      numberLines++; //Incrementa em a variável numberLines em 1.
+          
+                  } //Fim da instrução de repetição controlada pela espressão numberLines < 15.
+          
+          
+                  widthX = getWidth(); //Valor da largura da janela é atribuido a variável local do tipo int.
+                  widthY = getWidth() - 15; //Valor da largura da janela menos o valor 15 é atribuido a variável local do tipo int.
+                  heightX = getHeight(); //Valor da altura da janela é atribuido a variável local do tipo int.
+                  heightY = 0; //Valor 0 é atribuido a variável local do tipo int.
+          
+                  numberLines = 0; //Valor 0 é atribuido a variável local do tipo int.
+          
+                  while(numberLines < 15) { //Início da instrução de repetição controlada pela espressão numberLines < 15.
+          
+                      g.drawLine(widthX, heightX, widthY, heightY); //Desenha uma linha de acordo os argumentos passados como parâmetro.
+          
+                      widthY -= 15; //Decrementa a variável widthY em 15.
+                      heightX -= 15; //Decrementa a variável heightX em 15.
+          
+                      numberLines++; //Incrementa em a variável numberLines em 1.
+          
+                  } //Fim da instrução de repetição controlada pela espressão numberLines < 15.
+          
+          
+                  widthX = 0; //Valor 0 é atribuido a variável local do tipo int.
+                  widthY = 15; //Valor 15 é atribuido a variável local do tipo int.
+                  heightX = getHeight(); //Valor da altura da janela é atribuido a variável local do tipo int.
+                  heightY = 0; //Valor 0 é atribuido a variável local do tipo int.
+          
+                  numberLines = 0; //Valor 0 é atribuido a variável local do tipo int.
+          
+                  while(numberLines < 15) { //Início da instrução de repetição controlada pela espressão numberLines < 15.
+          
+                      g.drawLine(widthX, heightX, widthY, heightY); //Desenha uma linha de acordo os argumentos passados como parâmetro.
+          
+                      widthY += 15; //Incrementa a variável widthY em 15.
+                      heightX -= 15; //Decrementa a variável heightX em 15.
+          
+                      numberLines++; //Incrementa em a variável numberLines em 1.
+          
+                  } //Fim da instrução de repetição controlada pela espressão numberLines < 15.
+          
+              } //Fim do método paintComponent.
+          
+          } //Fim da classe Exercício42A.
+          ```
+    
           
