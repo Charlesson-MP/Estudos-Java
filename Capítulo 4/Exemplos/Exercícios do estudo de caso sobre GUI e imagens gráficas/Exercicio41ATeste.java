@@ -1,4 +1,4 @@
-/*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra a.*/
+/*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra (a) e (b).*/
 
 import javax.swing.JFrame; //Importando a classe JFrame da Java API.
 

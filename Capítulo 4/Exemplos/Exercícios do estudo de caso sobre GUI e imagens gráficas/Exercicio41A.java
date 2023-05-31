@@ -1,4 +1,4 @@
-/*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra a. */
+/*Exercício do estudo de caso GUIs e imagens gráficas 4.1 letra (a) e (b). */
 
 import java.awt.Graphics; //Importando a classe Graphics da Java API.
 import javax.swing.JPanel; //Importando a classe JPanel da Java API.
